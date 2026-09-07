@@ -11,6 +11,8 @@ GuardDuty finding -> EventBridge rule -> Lambda -> Bedrock (triage)
 -> DynamoDB (store)
 -> SNS (notify)
 
+<img src="architecture.png" alt="Architecture diagram" width="500">
+
 ### Architecture Decisions
 
 - **Event-driven serverless (EventBridge + Lambda)**: Findings arrive unpredictably and in bursts. A long-running server would sit idle most of the time, increasing costs. Lambda scales to zero and fans out automatically.
