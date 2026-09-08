@@ -50,3 +50,13 @@ Both SNS emails and new DynamoDB items will be processed within a minute.
 - One consistent region across the AWS CLI/provider, GuardDuty, and the
   Bedrock model access grant.
 - DynamoDB uses server-side encryption; logs retain 14 days.
+
+## Screenshots
+
+### DynamoDB
+
+<img src="Screenshot1.png" alt="DynamoDB" width="700">
+
+### Email
+
+<img src="Screenshot2.png" alt="Email" width="700">
